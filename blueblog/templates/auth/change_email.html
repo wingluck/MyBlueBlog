@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}BlueBlog-Reset Password{% endblock %}
+
+
+{% block page_content %}
+<div class="col-md-4">
+{{ wtf.quick_form(form) }}
+</div>
+{% endblock %}
